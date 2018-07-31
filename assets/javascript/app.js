@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+    //starting array of athletes
     var topics = ["Mike Trout", "Todd Gurley", "Shohei Ohtani", "Jared Goff", "Aaron Donald", "Andelton Simmons", "Michelle Jenneke", "Kobe Bryant", "Lebron James", "Lonzo Ball", "Lindsey Vonn", "Ric Flair"];
 
     function displayAthlete() {
@@ -41,6 +42,7 @@ $(document).ready(function () {
         })
     }
 
+    //function to display the buttons
     function renderButtons() {
         $("#athlete-buttons").empty();
         // Loops through the array of athletes
@@ -56,6 +58,7 @@ $(document).ready(function () {
 
     }
 
+    //Gets the value of the user input and adds it to the topics array
     $("#add-athlete").on("click", function (event) {
         event.preventDefault();
         var athlete = $("#athlete-input").val().trim();
@@ -66,6 +69,7 @@ $(document).ready(function () {
         renderButtons();
     });
 
+    //calls the displayAthlete function when click
     $(document).on("click", ".athlete-name", displayAthlete);
 
     renderButtons();
