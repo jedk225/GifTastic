@@ -73,9 +73,9 @@ $(document).ready(function () {
 
 
     $(document).on("click", ".gif-class", function () {
-        alert("hello");
+        //alert("hello");
 
-        var state = $(this.attr("data-state"));
+        var state = $(this).attr("data-state");
 
         if (state === "still") {
             $(this).attr("src", $(this).attr("data-animate"));
