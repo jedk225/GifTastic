@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    var topics = ["mike trout", "todd gurley", "shohei ohtani", "jared goff", "aaron donald", "andelton simmons", "lebron james"];
+    var topics = ["Mike Trout", "Todd Gurley", "Shohei Ohtani", "Jared Goff", "Aaron Donald", "Andelton Simmons", "Michelle Jenneke", "Kobe Bryant", "Lebron James", "Lonzo Ball", "Lindsey Vonn", "Ric Flair"];
 
     function displayAthlete() {
         //Prevents athlete gifs from crossing over
@@ -48,7 +48,7 @@ $(document).ready(function () {
 
             var a = $("<button>");
 
-            a.addClass("athlete-name");
+            a.addClass("athlete-name btn btn-secondary");
             a.attr("data-name", topics[i]);
             a.text(topics[i]);
             $("#athlete-buttons").append(a);
