@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="assets/javascript/app.js"></script>
@@ -17,6 +23,23 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="https://giphy.com" target="_blank">Giphy</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link" href="https://www.mlb.com" target="_blank">MLB
+                    <span class="sr-only">(current)</span>
+                </a>
+                <a class="nav-item nav-link" href="https://www.nfl.com" target="_blank">NFL</a>
+                <a class="nav-item nav-link" href="http://www.nba.com/#/" target="_blank">NBA</a>
+                <a class="nav-item nav-link" href="https://www.teamusa.org" target="_blank">Team USA</a>
+            </div>
+        </div>
+    </nav>
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="display-4">GifTastic - Sports</h1>
@@ -32,8 +55,10 @@
             <input type="text" id="athlete-input">
             <br>
             <!-- Button triggers new athlete to be added -->
-            <input id="add-athlete" type="submit" value="Add that athlete" class="btn btn-primary">
+            <input id="add-athlete" type="submit" value="Add Athlete" class="btn btn-primary">
         </form>
+
+        <button id="clear" class="btn btn-danger">Clear Athletes</button>
 
         <br>
 
@@ -44,6 +69,13 @@
         <div id="athletes"></div>
 
     </div>
+
+    <br>
+    <br>
+    <br>
+
+    <footer>&copy;Jed Kim 2018</footer>
+
 </body>
 
 </html>

@@ -88,4 +88,12 @@ $(document).ready(function () {
 
     });
 
+    //Added clear button to empty array if desired
+    $("#clear").click(function () {
+        //alert("hello");
+        topics = [];
+        renderButtons();
+
+    });
+
 });
