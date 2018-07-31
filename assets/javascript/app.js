@@ -8,7 +8,7 @@ $(document).ready(function () {
         $("#athletes").empty();
 
         var athlete = $(this).attr("data-name");
-        //var athlete = "mike trout";
+        //var athlete = "mike trout"; test variable
         var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=vxAOMDXMMGqiamjZ0RWFmHzgXcM0Gbuu&q=" + athlete + "&limit=10&offset=0&rating=G&lang=en";
 
         $.ajax({
