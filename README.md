@@ -1,7 +1,5 @@
 # GifTastic
 
-## Homework Assignment 6 at the Coding Bootcamp at UCI
-### This assigment was our first attempt at implementing an API in one of our own projects
 ## This web app utilizes the Giphy API
 
 * Users input their favorite athlete in the text form
